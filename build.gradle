@@ -20,7 +20,7 @@ apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 
 sourceCompatibility = 1.8
-
+jib.to.image = 'bastianbaist/kafka-producer'
 repositories {
     maven { url 'https://repo.spring.io/libs-snapshot' }
     maven { url "http://repo.spring.io/milestone" }
