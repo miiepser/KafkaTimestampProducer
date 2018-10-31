@@ -47,6 +47,7 @@ dependencies {
     compile group: 'org.apache.kafka', name: 'kafka-clients', version: 'latest.release'
     compile group: 'org.apache.kafka', name: 'kafka-streams', version: 'latest.release'
     compile group: 'org.apache.commons', name: 'commons-collections4', version: 'latest.release'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: 'latest.release'
     compile 'org.springframework.boot:spring-boot-gradle-plugin'
     compile 'com.google.apis:google-api-services-cloudbuild:latest.release'
 

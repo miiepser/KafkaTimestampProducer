@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.Serdes;
@@ -18,9 +19,11 @@ import org.apache.kafka.streams.StreamsConfig;
 public class KafkaProducerClient implements CommandLineRunner {
 
     private final static Logger LOG = LoggerFactory.getLogger(KafkaProducerClient.class);
-    public static final String TOPIC = "test-producer";
+    public static String TOPIC = "test-producer";
     private final KafkaProducer myPro;
-    private static final Properties PROPERTIES= new Properties();;
+    private static final Properties PROPERTIES = new Properties();
+    ;
+
     {
         PROPERTIES.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-linesplit-prod");
 
@@ -43,11 +46,24 @@ public class KafkaProducerClient implements CommandLineRunner {
 
 
     private static void parseProperties(String[] optionalProps) {
-        for(int i=0;i<Arra)
+        for (int i = 0; i < CollectionUtils.size(optionalProps); ++i) {
+            final String currentArg = optionalProps[i];
+            switch (currentArg) {
+                case "bootstrap.servers":
+                    PROPERTIES.put(currentArg, optionalProps[++i]);
+                    break;
+                case "send.topic":
+                    TOPIC = optionalProps[++i];
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
     @Override
     public void run(String... args) throws Exception {
+        parseProperties(args);
         AtomicBoolean ab = new AtomicBoolean(true);
         Runtime.getRuntime().addShutdownHook(new Thread("streams-shutdown-hook") {
             @Override
@@ -72,8 +88,6 @@ public class KafkaProducerClient implements CommandLineRunner {
         }
 
     }
-
-
 
 
     public void send(final String topic, final String value) {

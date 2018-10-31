@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d0556b-b256-492d-a885-c05b6cb49433" name="Default Changelist" comment="splitting up into 3 Projects">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/PipeKStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/PipeKStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KafkaTimestampConsumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampConsumer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../KafkaTimestampConsumer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampConsumer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaTimestampConsumer/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampConsumer/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -46,27 +46,27 @@
         <counts>
           <entry key="gradle" value="3" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="1" />
+          <entry key="java" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="203" />
-          <entry key="java" value="97" />
+          <entry key="gradle" value="207" />
+          <entry key="java" value="289" />
           <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="203" />
-          <entry key="JAVA" value="97" />
+          <entry key="Groovy" value="207" />
+          <entry key="JAVA" value="289" />
           <entry key="PLAIN_TEXT" value="32" />
         </counts>
       </usages-collector>
@@ -77,12 +77,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="145">
+              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1738#1739#0" expanded="true" />
-                <element signature="e#1759#1760#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+            <state relative-caret-position="495">
+              <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -310,9 +308,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6163246359000" />
+        <entry key="$PROJECT_DIR$" value="6163251027000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1667925091" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="4294468053" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3002582495" />
       </map>
@@ -601,7 +599,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540980335234" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540984158384" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -637,15 +635,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540561250103</updated>
-      <workItem from="1540561257778" duration="8055000" />
+      <workItem from="1540561257778" duration="9411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8055000" />
+    <option name="totallyTimeSpent" value="9411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -653,13 +652,13 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Build" weight="0.32959184" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.29183674" />
+      <window_info anchor="bottom" id="Terminal" weight="0.29183674" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -705,19 +704,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        <state relative-caret-position="495">
+          <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-clients/2.0.0/ade98037394648bc8d43ded3191926c75b1df402/kafka-clients-2.0.0-sources.jar!/org/apache/kafka/clients/CommonClientConfigs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="37" column="76" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/2.0.0/f45b23ebd757b4afaf240125ecffa4b4912eef41/kafka-streams-2.0.0-sources.jar!/org/apache/kafka/streams/StreamsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="274" column="83" selection-start-line="274" selection-start-column="83" selection-end-line="274" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="145">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
           </folding>
         </state>
       </provider>
