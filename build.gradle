@@ -11,6 +11,18 @@ plugins {
     id 'org.springframework.boot' version('2.0.6.RELEASE')
     id 'com.google.cloud.tools.jib' version '0.9.11'
 }
+jib{
+    from {
+        image = 'openjdk:8-jdk-alpine'
+    }
+    to {
+        image = 'bastianbaist/kafka-producer'
+        tags = ['configured.jib', 'latest']
+    }
+    container {
+
+    }
+}
 
 
 group 'de.sample.baist.kafka'
@@ -20,7 +32,6 @@ apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 
 sourceCompatibility = 1.8
-jib.to.image = 'bastianbaist/kafka-producer'
 repositories {
     maven { url 'https://repo.spring.io/libs-snapshot' }
     maven { url "http://repo.spring.io/milestone" }
@@ -35,6 +46,7 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '[2.0.,2.1['
     compile group: 'org.apache.kafka', name: 'kafka-clients', version: 'latest.release'
     compile group: 'org.apache.kafka', name: 'kafka-streams', version: 'latest.release'
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: 'latest.release'
     compile 'org.springframework.boot:spring-boot-gradle-plugin'
     compile 'com.google.apis:google-api-services-cloudbuild:latest.release'
 

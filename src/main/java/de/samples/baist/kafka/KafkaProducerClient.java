@@ -41,6 +41,11 @@ public class KafkaProducerClient implements CommandLineRunner {
         this.myPro = new KafkaProducer(PROPERTIES);
     }
 
+
+    private static void parseProperties(String[] optionalProps) {
+        for(int i=0;i<Arra)
+    }
+
     @Override
     public void run(String... args) throws Exception {
         AtomicBoolean ab = new AtomicBoolean(true);
