@@ -2,25 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d0556b-b256-492d-a885-c05b6cb49433" name="Default Changelist" comment="splitting up into 3 Projects">
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/HelloWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/PipeKStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/PipeKStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaTimestampConsumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampConsumer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaTimestampConsumer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampConsumer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaTimestampConsumer/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampConsumer/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/PipeKStream.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -686,7 +693,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1892552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
