@@ -21,4 +21,5 @@ addons:
     - docker-ce
 
 script:
+  echo $DOCKER_PASS | docker login -u $DOCKER_USER -p
   - ./gradlew jib
