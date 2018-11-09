@@ -30,5 +30,5 @@ before_install:
 script:
   - docker --version
   #- echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-  - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" -p "$DOCKER_PASS"
+  - docker login -u "$DOCKER_USER" -p $DOCKER_PASS
   - ./gradlew jib
