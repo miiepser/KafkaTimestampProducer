@@ -9,7 +9,7 @@ buildscript {
 plugins {
     id 'java'
     id 'org.springframework.boot' version('2.0.6.RELEASE')
-    id 'com.google.cloud.tools.jib' version '0.9.11'
+    id 'com.google.cloud.tools.jib' version('0.9.11')
 }
 jib{
     from {
@@ -17,13 +17,12 @@ jib{
     }
     to {
         image = 'bastianbaist/kafka-producer'
-        tags = ['configured.jib', 'latest']
+        tags = ['configured.jib', 'latest', InetAddress.localHost.hostName]
     }
     container {
         useCurrentTimestamp = true
     }
 }
-
 
 group 'de.sample.baist.kafka'
 version '1.0-SNAPSHOT'
