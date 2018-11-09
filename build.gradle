@@ -9,7 +9,7 @@ buildscript {
 plugins {
     id 'java'
     id 'org.springframework.boot' version('2.0.6.RELEASE')
-    id 'com.google.cloud.tools.jib' version('0.10.0')
+    id 'com.google.cloud.tools.jib' version '0.10.0'
 }
 jib{
     from {
@@ -28,7 +28,6 @@ group 'de.sample.baist.kafka'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-apply plugin: 'org.com.cloud.tools.jib'
 apply plugin: 'org.springframework.boot'
 
 sourceCompatibility = 1.8
@@ -49,7 +48,7 @@ dependencies {
     compile group: 'org.apache.commons', name: 'commons-collections4', version: 'latest.release'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: 'latest.release'
     compile 'org.springframework.boot:spring-boot-gradle-plugin'
-    compileOnly 'com.google.cloud.tools:jib:0.9.11'
+    //compileOnly 'com.google.cloud.tools:jib:0.9.11'
 
 //    compile group: 'springframework.boot', name: 'spring-boot-gradle-plugin', version: '[2.0,2.1['
 //    compileClasspath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '2.0.*'
