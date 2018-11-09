@@ -1,0 +1,24 @@
+git:
+  submodules: true
+
+
+branches:
+  only:
+  - master
+  - stable
+
+language: java
+install: true
+
+sudo: required
+
+services:
+  - docker
+
+addons:
+  apt:
+    packages:
+    - docker-ce
+
+script:
+  - ./gradlew jib
