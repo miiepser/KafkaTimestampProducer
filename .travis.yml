@@ -1,37 +1,24 @@
 git:
   submodules: true
-
-
 branches:
   only:
   - master
   - stable
-
 language: java
 install: true
-
 sudo: true
 dist: trusty
-
 services:
-  - docker
-
+- docker
 addons:
   apt:
     packages:
     - docker-ce
-
-
-#before_install:
-#  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-#  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-#  - sudo apt-get update
-#  - sudo apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
-
 script:
-  - docker --version
-  - docker login --help
-  - echo $DOCKER_USER
-  #- echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-  - echo $DOCKER_PASS | docker login -u "$DOCKER_USER" --password-stdin || exit 1
-  - ./gradlew jib
+- docker --version
+- docker login --help
+- echo $DOCKER_USER
+- echo $DOCKER_PASS | docker login -u "$DOCKER_USER" --password-stdin || exit 1
+- "./gradlew jib"
+dd:
+  secure: behWwiwT6Kdb0ghhmAhW02/xdO2eon6F/TZOhCoZaj7ozcm1e2HkAO5CrdsBDkjHeY/yIabsbWSoX1Xr06IGnKWQc+b7UmwQKurnLeqq9jXfa+Lf/4MPwvy/8H27s8UXG4jYoOp+2DRILiO3pbvmurTZijDcAg9CmCfCQTggQEktccghGVexWtpLetivSpaIznkGSjN0dyiulMyJICceIUPujbGR8U8H9lTfgjU80fi2AW2I9BIkphmHEcZGhxjyhrrxIEPsvRWPPn/O1SgLSQdWSDg+7/BrX8FUoXuWbRsKF4TL8hbHgybk4xc7zcfe1c9UCGMtNNG1S6UyCjAxabD8vKsTg6Ko7Ziv1b/wKBA697e4j/y85EOvWccOP+vz/HLHXlftZ5gP06IT62mHyWqHHzgshtl4MpPjxICoG+v+UByyM8nbQUCF1bEo0c3MBf7m5eRxgXGzL0V0JBz+3OfAfBfeb1+4ZGjxTqIpi8ciiuLUSf6f7qavWy8uJIZkMTg1c78cNDE8yX8tfpJch5geXC0MZgr+CUrgd+qc0jE++77Hcz9cYm1EYt9y5THCcvX8AbbEJ78m659U6bqEIgqrA7J1mMziwq0xztyaX9ngVz4uLHeCjTPhKhhIBxiY8bGAHvcUFFntTQJ0d6aSBpHuDB+mT3mHs2joJJRay+M=
