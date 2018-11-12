@@ -10,7 +10,8 @@ branches:
 language: java
 install: true
 
-sudo: required
+sudo: true
+dist: trusty
 
 services:
   - docker
