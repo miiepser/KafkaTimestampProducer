@@ -32,5 +32,5 @@ script:
   - docker login --help
   - echo $DOCKER_USER
   #- echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-  - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin || exit 1
+  - echo $DOCKER_PASS | docker login -u "$DOCKER_USER" --password-stdin || exit 1
   - ./gradlew jib
