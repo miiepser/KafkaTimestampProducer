@@ -15,6 +15,7 @@ addons:
     packages:
   #  - docker-ce
 script:
+- /bin/bash
 - docker --version
 - docker login --help
 - echo $DOCKER_USER
