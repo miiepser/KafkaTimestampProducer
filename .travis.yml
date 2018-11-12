@@ -13,7 +13,7 @@ services:
 addons:
   apt:
     packages:
-    - docker-ce
+  #  - docker-ce
 script:
 - docker --version
 - docker login --help
